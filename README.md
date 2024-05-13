@@ -1,2 +1,2 @@
-# a_small_guestbook_application
+# _small_guestbook_application
 A simple PHP project
