@@ -60,3 +60,7 @@ The application requires two tables in the MySQL database:
 
 #### Contact
 For any issues or suggestions, please contact the repository maintainer at [1244Matt1244](https://github.com/1244Matt1244).
+
+---
+
+This documentation provides a basic understanding of the Guestbook Application's functionality, setup, and usage. For further customization or enhancements, refer to the source code and feel free to contribute to the project.
