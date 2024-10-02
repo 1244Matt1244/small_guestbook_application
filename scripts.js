@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Fetch entries without reloading the page
+    // Fetch entries
     const fetchEntries = () => {
         fetch('fetch_entries.php')
             .then(response => response.json())
@@ -32,7 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     `;
                     entriesContainer.appendChild(entryElement);
                 });
-            });
+            })
+            .catch(error => console.error('Error fetching entries:', error));
     };
 
     // Fetch entries on page load
@@ -57,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
             } else {
                 alert(data.error);
             }
-        });
+        })
+        .catch(error => console.error('Error adding entry:', error));
     });
 });
